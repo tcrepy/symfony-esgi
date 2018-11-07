@@ -1,11 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <div class="row">
-        <div class="col-sm"><a href="{{ path('article_controller_index') }}">
-                <button type="button" class="btn btn-primary">Retour</button>
-            </a></div>
-    </div>
+    {% include 'back.html.twig' with {'path': 'article_controller_index'} %}
     <div class="row">
         <div class="col-sm">
             <p>
