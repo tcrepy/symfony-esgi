@@ -1,6 +1,5 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello {{ controller_name }}!{% endblock %}
 
 {% block body %}
 <style>
@@ -11,7 +10,7 @@
 <div class="example-wrapper">
     <a href="{{ path('article_controller_create') }}">create</a>
     {% for article in articles %}
-        <p>{{ article.name }} - {{ article.content }} - <a href="{{ path('article_controller_update', {'id': article.id}) }}">Edit</a></p>
+        <p><a href="{{ path('article_controller_show', {'id': article.id}) }}">{{ article.name }}</a> - {{ article.content }} - <a href="{{ path('article_controller_update', {'id': article.id}) }}">Edit</a> - <a href="{{ path('article_controller_delete', {'id': article.id}) }}">delete</a></p>
     {% else %}
         <p>Il n'y a aucun article</p>
     {% endfor %}

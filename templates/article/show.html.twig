@@ -1,9 +1,18 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <p>
-        {{ article.name }} - {{ article.content }}
-    </p>
+    <div class="row">
+        <div class="col-sm"><a href="{{ path('article_controller_index') }}">
+                <button type="button" class="btn btn-primary">Retour</button>
+            </a></div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <p>
+                {{ article.name }} - {{ article.content }}
+            </p>
+        </div>
+    </div>
 {% endblock %}
 
 {% block title %}

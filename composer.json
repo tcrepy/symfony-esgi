@@ -6,7 +6,9 @@
     "require": {
         "php": "^7.1.3",
         "ext-ctype": "*",
+        "ext-http": "*",
         "ext-iconv": "*",
+        "fzaninotto/faker": "^1.8",
         "sensio/framework-extra-bundle": "^5.2",
         "symfony/asset": "*",
         "symfony/console": "*",
@@ -24,10 +26,10 @@
         "symfony/twig-bundle": "*",
         "symfony/validator": "*",
         "symfony/web-link": "*",
-        "symfony/yaml": "*",
-      "ext-http": "*"
+        "symfony/yaml": "*"
     },
     "require-dev": {
+        "doctrine/doctrine-fixtures-bundle": "^3.0",
         "symfony/debug-pack": "*",
         "symfony/dotenv": "*",
         "symfony/maker-bundle": "^1.0",

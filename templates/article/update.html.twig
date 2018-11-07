@@ -1,8 +1,15 @@
-{% extends '../base.html.twig' %}
+{% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Mettre à jour l'article {{ article.name }}</h1>
-    {{ form(form) }}
+    <div class="row">
+        <div class="col-sm"><a href="{{ path('article_controller_index') }}">
+                <button type="button" class="btn btn-primary">Retour</button>
+            </a></div>
+    </div>
+    <div class="row justify-content-md-center"><h1 class="col-sm">Mettre à jour l'article {{ article.name }}</h1></div>
+    <div class="row justify-content">
+        <div class="col-sm-5">{{ form(form) }}</div>
+    </div>
 {% endblock %}
 
 {% block title %}
